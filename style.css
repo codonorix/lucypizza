@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400;500;600;700&display=swap');
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    font-family: 'Edu SA Beginner', cursive;
+    transition: all 1s ease-in-out;
+}
+
+.bg-pizza {
+    background-image: url("imgs/pizzabg.png");
+    background-size: cover;
+}
+
+.bg-pasta {
+    background-image: url("imgs/pasta.png");
+    background-size: cover;
+}
+
+.bg-burger {
+    background-image: url("imgs/burger-3d-illustration-free-png.png");
+    background-size: cover;
+}
+
+.bg-coffee {
+    background-image: url("imgs/coffee.png");
+    background-size: cover;
+}
+
+.homepage__container {
+    width: 90%;
+    margin: auto;
+    display: block;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.homepage__nav__content {
+    display: flex;
+    gap: 40px;
+}
+
+.homepage__nav__content a, .homepage__nav__orderonline a {
+    color: white;
+    font-size: 24px;
+}
+
+.homepage__nav__orderonline {
+    border: white 3px solid;
+    padding: 16px 23px;
+}
+
+.product__main__display {
+    width: 80vh;
+    height: 80vh;
+    background-color: pink;
+    border-radius: 100%;
+    position: absolute;
+    top: 90%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+}
+
+.product__main__display__image {
+    width: 70vh;
+    height: auto;
+    position: absolute;
+    top: 34%;
+    left: 65%;
+    transform: translate(-50%, -50%) rotateZ(100deg);
+}
+
+.info__section__container {
+    position: absolute;
+    width: 30%;
+    top: 20%;
+}
+
+.info__section__container h1 {
+    color: white;
+    font-size: 60px;
+}
+
+.info__section__container h2 {
+    font-size: 45px;
+    color: white;
+}
+
+.info__section__container p {
+    font-size: 24px;
+    color: white;
+    font-weight: 500;
+}
+
+.product__display__selector {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    position: absolute;
+    top: 70%;
+}
+
+.product__display__button {
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+}
+
+.product__display__selector img {
+    width: 120px;
+    height: auto;
+}
+
+.product__display__selector:first-child {
+    border-bottom: 2px white solid;
+}
+
+.product__main__display__image {
+    animation-name: turning;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes turning {
+    from {
+        transform: rotateZ(100deg);
+    }
+    65% {
+        transform: rotateZ(85deg);
+    }
+    to {
+        transform: rotateZ(100deg);
+    }
+}
+
+.image-display-up {
+    position: absolute;
+    left: 65%;
+    top: 45%;
+    animation-name: imageUpAni;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+}
+
+@keyframes imageUpAni {
+    from{
+        top: 200%;
+    }
+    to{
+        top: 45%;
+    }
+}
+
+.image-display-down {
+    position: absolute;
+    left: 65%;
+    top: 200%;
+    animation-name: imageDownAni;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+@keyframes imageDownAni {
+    from{
+        top: 45%;
+    }
+    to{
+        top: 200%;
+    }
+}
+

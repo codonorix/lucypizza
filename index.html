@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lucy's Pizza</title>
+    <link href="style.css" rel="stylesheet"/>
+</head>
+<body class="bg-pizza">
+<div class="homepage__container">
+    <nav>
+        <img src="imgs/lucys-logo.jpg">
+        <div class="homepage__nav__content">
+            <a>Home</a>
+            <a>Menus</a>
+            <a>Photos</a>
+            <a>Contact Us</a>
+        </div>
+        <div class="homepage__nav__orderonline">
+            <a>Order Online</a>
+        </div>
+    </nav>
+    <!--    <img src="imgs/pizza-3d-illustration-free-png.png">-->
+    <div class="product__main__display"></div>
+    <div class="image-display-up" id="display-image-container">
+        <img src="imgs/pizza-3d-illustration-free-png.png" class="product__main__display__image" id="display-image">
+    </div>
+    <div class="info__section__container">
+        <h1 class="homepage__header">Lucy's Pizza</h1>
+        <h2>Pizza, because it's always pizza time!</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam aperiam consequuntur doloribus est et
+            facilis illo ipsam maiores quia quidem quis reiciendis rerum sunt temporibus veniam, voluptatem. Aliquam,
+            corporis.</p>
+    </div>
+    <div class="product__display__selector">
+        <div onclick="changeIcon('pizza')">
+            <img src="imgs/pizza-3d-illustration-free-png.png">
+        </div>
+        <div onclick="changeIcon('burger')">
+            <img src="imgs/burger-3d-illustration-free-png.png"/>
+        </div>
+        <div onclick="changeIcon('pasta')">
+            <img src="imgs/pasta.png"/>
+        </div>
+        <div onclick="changeIcon('coffee')">
+            <img src="imgs/coffee.png"/>
+        </div>
+    </div>
+</div>
+<script src="script.js" rel="script"></script>
+</body>
+</html>
